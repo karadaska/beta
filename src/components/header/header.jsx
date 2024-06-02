@@ -14,7 +14,7 @@ function DisplayNavBar() {
                 <label htmlFor="nav"></label>
           <ul className="ul-list">
             <li className="list-item">
-              <a href="/">Acasa</a>
+              <a href="/">Acasa beta</a>
             </li>
             <li className="list-item">
               <a href="#meniu">Meniu</a>
