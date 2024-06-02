@@ -40,9 +40,17 @@
     height: 30px;
 }
 
+
+@media (max-width: 1440px) { 
+    .paragraf_title{
+        font-size: 17px;
+    }
+}
+
  @media (max-width: 768px) { 
     .paragraf_title {
         margin-top: 4px;
+        font-size: 17px;
     }
 
     .servicii_text {
