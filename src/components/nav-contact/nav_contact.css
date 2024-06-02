@@ -1,0 +1,56 @@
+ .header-contact {
+    z-index: 997;
+    background-color: #2cad0d;
+    width: 100%;
+    height: 55px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+.div1_contact{
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.div2_contact{
+    width: 600px;
+    text-align: left;
+    font-size: 18px;
+    margin: 15px;
+}
+
+
+.div3_contact{
+    width: 600px;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.div4_contact{
+    width: 100px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.icons_header{
+    float: right;
+}
+
+.icons_header_facebook {
+    height: 25px;
+    margin: 2px;
+}
+
+.icons_header_agenda {
+    height: 25px;
+    margin: 2px;
+}
+
+@media (max-width :375px) { 
+    .header-contact {
+        height: 73px;
+    }
+}

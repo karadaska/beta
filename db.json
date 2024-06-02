@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "email": "fofo@gmail.com",
+      "password": "$2a$10$njtiTZCVrSaUtJBCRAmfyOYZlSWPznJpcvWnWuAqWOcr2AcbnSPqq",
+      "username": "asdas",
+      "id": 1
+    },
+    {
+      "email": "munteanu@gmail.com",
+      "password": "$2a$10$qkNwKfqQllH.qeaVuMjQIe3GNq2RNK4Y64/jjbrNJg//Sv2QXc8G2",
+      "username": "florin",
+      "id": 2
+    }
+  ],
+  "meniu": [
+    {
+      "id": "d3a74903-31ff-4cff-8072-a9a4bbc9c6c3",
+      "title": "Mamma mia2",
+      "descriere": "Cea mai buna pizza",
+      "pret": "23"
+    },
+    {
+      "id": "8835a1fa-0681-4618-a714-a18c0698d275",
+      "title": "Raymond",
+      "descriere": "Danma",
+      "pret": "19999",
+      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9ffd6f24-1854-4ef8-855d-fd5c525d7112.jpg"
+    },
+    {
+      "id": "714bf231-74c2-4c37-866d-0413fa756a0c",
+      "title": "puiu",
+      "descriere": "blat pufos",
+      "pret": "44.5",
+      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9ffd6f24-1854-4ef8-855d-fd5c525d7112.jpg"
+    },
+    {
+      "id": "81694259-bb26-409d-ad48-70a0329f97fa",
+      "title": "123123123",
+      "descriere": "blat pufos",
+      "pret": "22mama",
+      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9ffd6f24-1854-4ef8-855d-fd5c525d7112.jpg"
+    },
+    {
+      "id": "e373",
+      "title": "123123123",
+      "descriere": "blat pufos",
+      "pret": "333",
+      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9ffd6f24-1854-4ef8-855d-fd5c525d7112.jpg"
+    },
+    {
+      "id": "96e6",
+      "title": "123123123",
+      "descriere": "blat pufos",
+      "pret": "444",
+      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9ffd6f24-1854-4ef8-855d-fd5c525d7112.jpg"
+    }
+  ]
+}

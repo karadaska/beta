@@ -1,0 +1,110 @@
+.home {
+    height: 960px;
+    background: url('../../images/Home/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.home .home-information {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.home .home-information .home-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home .home-information .home-info {
+    font-size: 35px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+
+.home .home-information .home-desc {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.home .home-information .home-desc span {
+    color: #fff;
+    font-weight: bolder;
+    
+}
+
+.home .home-information .home-btn {
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+.home .home-information .home-btn:hover {
+    background: #fff;
+    color: #eb5424
+}
+
+@media (max-width:768px) {
+    .home {
+        /* height: 960px; */
+        background: url('../../images/Home/home_mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .home .home-information .home-title {
+        font-size: 40px;
+        color: #fff
+    }
+    
+    .home .home-information .home-info {
+        font-size: 20px
+    }
+    
+    .home .home-information .home-desc {
+        font-size: 15px
+    }
+
+    .home .home-information {
+        top: 48%;
+    }
+}
+
+@media (max-width:475px) {
+    .home .home-information .home-title {
+        font-size: 30px;
+    }
+
+    .home .home-information .home-info {
+        font-size: 17px;
+    }
+
+    .home .home-information .home-desc {
+        font-size: 20px;
+    }
+
+    .home .home-information .home-btn {
+        font-size: 26px;
+        width: 228px;
+        height: 59px;
+    }
+}
+.home .home-information .home-btn {
+    padding: 9px;
+}
+    

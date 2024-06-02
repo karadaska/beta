@@ -1,0 +1,14 @@
+
+.copyright {
+    text-align: center;
+    text-align: center;
+    background-color: #fff;
+    font-style: italic;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.copyright p {
+    font-size: 14px;
+    margin-top: -30px;
+}

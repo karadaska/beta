@@ -1,0 +1,239 @@
+.navbar {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background: #fff;
+    position: relative;
+  }
+
+.div1_header{
+    width: 480px;
+}
+
+.div2_logo{
+    width: 600px;
+    text-align: left;
+    font-size: 18px;
+    margin: 15px;
+}
+
+.div3_navbar{
+    width: 1200px;
+    text-align: center;
+    font-size: 15px;
+    margin: 31px;
+}
+
+.div4_header{
+    width: 100px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.logo-img{
+    width: 50%;
+}
+
+.navbar input , .navbar label {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+ .navbar input {
+    display: none
+}
+
+.navbar label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../../images/Navbar/open.png') no-repeat ;
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar input:checked ~ .ul-list {
+    display: block;
+}
+
+.navbar input:checked ~ label {
+    background: url('../../images/Navbar/close.png') no-repeat ;
+    background-size: cover;
+}
+
+.navbar .ul-list {
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+
+.navbar .ul-list .list-item {
+    display: inline-block;
+}
+
+.navbar .ul-list .list-item a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 14px 15px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.navbar .ul-list .list-item a:hover {
+    color: #eb5424
+}
+
+.comanda_online{
+    height: 25px;
+    margin-bottom: -4px;
+} 
+
+.login{
+    height: 24px;
+    margin-bottom: -4px;
+    margin-left: 15px;
+}
+
+
+
+@media (max-width : 1440px) {
+    .div1_header{
+        width: 110px;
+    }
+    
+    .div2_logo{
+        width: 600px;
+        text-align: left;
+        font-size: 18px;
+        margin: 15px;
+    }
+    
+    .div3_navbar{
+        width: 1400px;
+        text-align: right;
+        font-size: 15px;
+        margin: 20px;
+    }
+    
+    .div4_header{
+        width: 0;
+    }
+}
+
+@media (max-width : 1024px) {
+
+    .navbar .ul-list {
+        width: 85%;
+        float: left;
+        list-style: none;
+    }
+
+    .logo-img{
+        width: 70%;
+    }
+    
+    .div1_header{
+        width: 0;
+    }
+    
+    .div2_logo{
+        width: 500px;
+        text-align: left;
+        font-size: 18px;
+        margin: 15px;
+        margin-left: 50px;
+    }
+    
+    .div3_navbar{
+        width: 1400px;
+        text-align: right;
+        font-size: 15px;
+        margin: 20px;
+    }
+    
+    .div4_navbar{
+        width: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    .navbar label {
+     display: none;
+    }
+}
+
+
+@media (max-width : 768px) {
+    .home {
+        height: 960px;
+        background: url('../../images/Home/home-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        position: relative;
+    }
+    
+    .navbar label {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        margin-right: 50px;
+        margin-top: 15px;
+    }
+
+    .navbar .ul-list .list-item a {
+        font-size: 20px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .logo-img {
+        width: 100%;
+        margin-top: -10px;
+    }
+    .navbar .ul-list {
+        width: 50%;
+        float:  none;
+        margin-top: 55px;
+        display: none;
+    }
+    
+    .comanda_online {
+        height: 30px;
+    }
+
+    .login {
+        height: 30px;
+        margin-left: -1px;
+    }
+
+    .navbar .ul-list .list-item {
+        display: block;
+        text-align: center;
+        font-size: 10px;
+        border-bottom: 1px solid gainsboro;
+    }
+}
+
+
+@media (max-width : 425px) {
+    .logo-img {
+        width: 164%;
+        margin-left: -20px;
+        margin-top: -5px;
+    }
+
+    .navbar label {
+        margin-right: 10px;
+    }
+
+}
+
+

@@ -1,0 +1,8 @@
+body {
+  font-family: lucida sans ;
+}
+
+* , *:after , *:before {
+    margin: 0;
+    padding: 0;
+}

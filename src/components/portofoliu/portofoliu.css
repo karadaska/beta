@@ -1,0 +1,115 @@
+.main_div {
+  background: rgb(115,114,109);
+  background: linear-gradient(114deg, rgb(247, 247, 247) 0%, rgba(177,177,177,0.38137261740633754) 100%);
+  display: flex;
+}
+.main-title{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-size: 2.2rem;
+  text-decoration: overline;
+}
+
+.grid-item img{
+  height: 150px;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+
+.grid-portofoliu {
+  display: grid;
+  column-gap: 35px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 30px;
+  gap:25px;
+  margin-top: 52px;
+}
+
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 35px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  overflow: hidden;
+  background: url('../../images/Portfolio/background_page.jpg') no-repeat ;
+  width: 250px;
+}
+
+.div_first_portofoliu {
+  width: 20%;
+}
+
+.div_third_portofoliu {
+  width: 20%;
+}
+
+.content h3 {
+  font-size: 20px;
+}
+
+.content p {
+  font-size: 13px;
+}
+
+.adauga_cos {
+  font-size: 12px!important;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  float: right;
+  margin-top: 6px;
+}
+
+.adauga_cos:hover{
+  border-color: #eb5424;
+}
+.adauga_cos:focus, .adauga_cos:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.pret {
+  color: red;
+}
+
+@media (max-width:800px) { 
+  .grid-item {
+    margin-left: 130px;
+  }
+  .grid-portofoliu {
+    display: flow;
+    width: 70%;
+  }
+
+  .div_first_portofoliu {
+    width: 15%;
+  }
+  
+  .div_third_portofoliu {
+    width: 15%;
+  }
+}
+
+
+/* @media (max-width:425) { 
+  .grid-item {
+    margin-right: 30px;
+  }
+ 
+} */
+
+ 

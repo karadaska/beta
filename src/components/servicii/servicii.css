@@ -1,0 +1,93 @@
+.servicii {
+    height: auto;
+    overflow: hidden;
+    background: lightgray;
+    display: flex;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.servicii_text {
+    text-align: center;
+    width: 45%;
+    background-color: #00d084;
+    font-size: 15px;
+}
+
+.main_title_servicii{
+    text-align: center;
+    margin: 40px;
+    text-decoration: overline;
+}
+.title_servicii {
+    margin-top: 45px;
+    font-size: 30px;
+}
+
+.subtitle_servicii {
+    font-size: 40px;
+}
+.servicii_poza {
+    float: right;
+    width: 100%;
+    background: url('../../images/banner/banner_pizza.jpg');
+}
+.paragraf_title {
+    margin-top: 45px;
+}
+
+.space {
+    height: 30px;
+}
+
+ @media (max-width: 768px) { 
+    .paragraf_title {
+        margin-top: 4px;
+    }
+
+    .servicii_text {
+        text-align: center;
+        width: 45%;
+        background-color: #00d084;
+        font-size: 17px;
+    }
+    .servicii_poza {
+        float: right;
+        width: 100%;
+        background: url('../../images/banner/banner_mobile.jpg');
+    }
+
+    .servicii_text {
+        text-align: center;
+        width: 60%;
+        background-color: #00d084;
+    }
+    
+    .subtitle_servicii {
+        font-size: 35px;
+    }
+
+    .space {
+        height: 20px;
+    }
+}
+
+@media (max-width: 425px) { 
+    .paragraf_title {
+        font-size: 14px;
+    }
+    .title_servicii {
+        margin-top: 25px;
+        font-size: 20px;
+    }
+    
+    .subtitle_servicii {
+        font-size: 18px;
+    }
+
+    .space {
+        height: 10px;
+    }
+}
+
+
