@@ -4,13 +4,16 @@ import "../pizza-details/pizzadetails.css";
 import DisplayNavContact from "../nav-contact/nav_contact";
 import DisplayNavBar from "../header/header";
 
-async function getPizzaById(seteazaPizza, pizza_id) {
-  const response = await fetch(`http://localhost:3000/meniu/${pizza_id}`);
+async function getPizzaById(seteazaPizza, pizza_id, accessToken) {
+  const response = await fetch(`http://localhost:3000/meniu/${pizza_id}`, {
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+    },
+  });
   const meniuFromServer = await response.json();
 
   seteazaPizza(meniuFromServer);
 
-  console.log(meniuFromServer);
 }
 
 export default function PizzaDetails() {

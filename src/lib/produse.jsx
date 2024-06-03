@@ -6,8 +6,6 @@ export async function getMeniu(setMeniu, accessToken, navigate) {
     });
     const meniuFromServer = await response.json();
   
-    console.log(meniuFromServer);
-
     if (response.ok) {
         setMeniu(meniuFromServer);
     }
