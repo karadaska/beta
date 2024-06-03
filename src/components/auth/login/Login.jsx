@@ -1,11 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 import DisplayNavContact from "../../nav-contact/nav_contact";
 import DisplayNavBar from "../../header/header";
 
 export function Login() {
   const navigate = useNavigate();
 
-  function login(event) {
+  async function login(event) {
     event.preventDefault();
 
     const formElement = event.target;
@@ -16,14 +16,27 @@ export function Login() {
       password: password.value,
     };
 
-    fetch("http://localhost:3000/login", {
+    const response = await fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
-    }).then(() => navigate("/login"));
+    });
+    const body = await response.json();
+
+    if (response.status === 400) {
+      // setError(body);
+      return;
+    }
+
+    if (response.ok) {
+      localStorage.setItem("accessToken", body.accessToken);
+      // setAuth(body.accessToken);
+      navigate("/");
+    }
   }
+
 
   return (
     <div>
