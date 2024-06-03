@@ -1,9 +1,13 @@
 import { json, useNavigate } from "react-router-dom";
 import DisplayNavContact from "../../nav-contact/nav_contact";
 import DisplayNavBar from "../../header/header";
+import { useContext } from "react";
+import { AuthContext } from "../../../App";
 
 export function Login() {
   const navigate = useNavigate();
+
+  const { setAuth } = useContext(AuthContext);
 
   async function login(event) {
     event.preventDefault();
@@ -32,7 +36,7 @@ export function Login() {
 
     if (response.ok) {
       localStorage.setItem("accessToken", body.accessToken);
-      // setAuth(body.accessToken);
+      setAuth(body.accessToken);
       navigate("/");
     }
   }

@@ -1,13 +1,17 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import DisplayTemplateGrid from "../functii/gridtemplate";
 import "./portofoliu.css";
 import {Link} from 'react-router-dom';
 import { useContext } from "react";
 import { ProduseContext } from "../../App";
 
-async function getMeniu(setMeniu){
-  const response = await fetch('http://localhost:3000/meniu');
+async function getMeniu(setMeniu, accessToken){
+  const response = await fetch('http://localhost:3000/meniu', {
+    headers: {
+      'Authorization' : `Bearer ${accessToken}`
+    }
+  });
 
   const meniuFromServer = await response.json();
   
@@ -17,11 +21,13 @@ async function getMeniu(setMeniu){
 }
 
 function DisplayPortofoliu() {
-  // const [lista_pizza, setMeniu] = useState([]);
+  const accessToken = localStorage.getItem("accessToken");
+  const [auth, setAuth] = useState(accessToken);
   const {lista_pizza, setMeniu} = useContext(ProduseContext)
+  
   useEffect(() => {
-    getMeniu(setMeniu)
-  }, []);
+    getMeniu(setMeniu, auth)
+  }, [auth]);
 
   return (
     <>

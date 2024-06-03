@@ -5,20 +5,21 @@ import { BrowserRouter, Routes, Route} from "react-router-dom";
 import AdaugaPizza from "./components/add-pizza/add";
 import EditPizza from "./components/edit-pizza/edit";
 import EditProdus from "./components/edit-produs/editprodus";
+import React, { useState } from "react";
 import { Register } from "./components/auth/register/register";
 import { Login } from "./components/auth/login/login";
 
-/* de aici import pt login*/
-import React, { useState } from "react";
-
 export const ProduseContext = React.createContext();
-
+export const AuthContext = React.createContext();
 
 function App() {
+  const accessToken = localStorage.getItem("accessToken");
   const [lista_pizza, setProduse] = useState([]);
+  const [auth, setAuth] = useState(accessToken);
   return (
     <>
     <ProduseContext.Provider value ={{lista_pizza,setProduse}}>
+    <AuthContext.Provider value={{ auth, setAuth }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={ <DisplayComponents />}></Route>
@@ -30,11 +31,10 @@ function App() {
           <Route path="/login" element={ <Login />}></Route>
         </Routes>
       </BrowserRouter>
+      </AuthContext.Provider>
       </ProduseContext.Provider>
     </>
   );
 }
 
 export default App;
-
-    /*"server": "npx json-server-auth db.json -r routes.json"*/
