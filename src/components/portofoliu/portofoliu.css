@@ -86,10 +86,19 @@ a:link {
   color: red;
 }
 
-@media (max-width:800px) { 
-  .grid-item {
-    margin-left: 130px;
-  }
+@media (max-width:1024px) { 
+  .grid-portofoliu {
+    margin-left: -154px;
+}
+}
+
+
+
+@media (max-width:768px) { 
+  .grid-portofoliu {
+    margin-left: 120px!important;
+}
+
   .grid-portofoliu {
     display: flow;
     width: 70%;
@@ -105,11 +114,18 @@ a:link {
 }
 
 
-/* @media (max-width:425) { 
+@media (max-width:425px) { 
   .grid-item {
-    margin-right: 30px;
+    margin-left: -100px;
   }
  
-} */
+}
 
+
+@media (max-width:375px) { 
+  .grid-item {
+    margin-left: -120px;
+  }
+ 
+}
  

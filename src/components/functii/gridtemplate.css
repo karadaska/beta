@@ -1,3 +1,122 @@
 .poza_portofoliu{
     height: 50px;
   }
+
+  .table, th, td {
+    border: 1px solid;
+    width: 600px;
+  }
+
+  .table_td{
+    width: 100px;
+  }
+  .table_img {
+    height: 250px;
+    text-align: center;
+  }
+
+.delete{
+  background: rgb(173, 26, 26);
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.delete:hover {
+  background: #fff;
+  color: #eb5424
+}
+
+.delete{
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+  float: right;
+}
+
+.delete {
+  padding: 9px;
+}
+
+.edit{
+  background: rgb(76, 79, 250);
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.edit:hover {
+  background: #fff;
+  color: #eb5424
+}
+
+.edit{
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+  float: right;
+}
+
+.edit {
+  padding: 9px;
+}
+
+  @media (max-width: 768px) {
+    .table, th, td {
+      border: 1px solid;
+      width: 540px;
+    }
+   }
+
+   @media (max-width: 425px) {
+    .table, th, td {
+      width: 240px;
+    }
+
+    .table_img {
+      height: 240px;
+      text-align: center;
+    }
+   }
+
+   @media (max-width: 768px) {
+    .table, th, td {
+      border: 1px solid;
+      width: 540px;
+    }
+   }
+
+   @media (max-width: 425px) {
+    .table, th, td {
+      width: 340px;
+    }
+
+    .table_img {
+      height: 270px;
+      text-align: center;
+    }
+   }
+
+   
+   @media (max-width: 375px) {
+    .table, th, td {
+      width: 240px;
+    }
+
+    .table_img {
+      height: 220px;
+      text-align: center;
+    }
+   }

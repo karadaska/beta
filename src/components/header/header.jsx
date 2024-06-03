@@ -1,7 +1,8 @@
 import "./header.css";
 import Logo from '../../images/logo/logo_popas.jpg';
-import Comanda from '../../images/Navbar/comanda.png';
-import Login from '../../images/Navbar/login.png';
+import Register from '../../images/Navbar/register.png';
+import Login from '../../images/Navbar/login.jpg';
+import { Link } from "react-router-dom";
 
 function DisplayNavBar() {
   return (
@@ -14,7 +15,7 @@ function DisplayNavBar() {
                 <label htmlFor="nav"></label>
           <ul className="ul-list">
             <li className="list-item">
-              <a href="/">Acasa main</a>
+              <a href="/">Acasa</a>
             </li>
             <li className="list-item">
               <a href="#meniu">Meniu</a>
@@ -26,10 +27,14 @@ function DisplayNavBar() {
               <a href="#contact">Contact</a>
             </li>
             <li className="list-item">
-            <img className="comanda_online" src={Comanda} />
+            <Link to="/register">
+            <img className="comanda_online" title="Vrei sa te inregistrezi?" src={Register} />
+            </Link>
             </li>
             <li className="list-item">
-            <img className="login" src={Login} />
+              <Link to="/login">
+            <img className="login" title="Login" src={Login} />
+            </Link>
             </li>
           </ul>
         </div>

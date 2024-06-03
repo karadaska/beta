@@ -1,0 +1,145 @@
+.table,
+th,
+td {
+  border: 1px solid;
+  background-color: lightgray;
+}
+
+.main_div {
+  background-color: lightgray;
+}
+
+.table {
+  width: 800px;
+  background-color: lightgray;
+}
+
+.th_table {
+  width: 40px;
+}
+
+.td_table {
+  width: 800px;
+}
+
+input {
+  width: 200px;
+}
+
+.update {
+  background: rgb(11, 105, 54);
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.update:hover {
+  background: #fff;
+  color: #eb5424;
+}
+
+.update {
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+  float: right;
+}
+
+.update {
+  padding: 9px;
+}
+
+.inapoi {
+  background: rgb(226, 196, 26);
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.inapoi:hover {
+  background: #fff;
+  color: #eb5424;
+}
+
+.inapoi {
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+  float: right;
+}
+
+.inapoi {
+  padding: 9px;
+}
+
+.produse {
+  background: rgb(26, 96, 226);
+  color: #fff;
+  font-size: 18px;
+  width: 150px;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+
+.produse:hover {
+  background: #fff;
+  color: #eb5424;
+}
+
+.produse {
+  font-size: 16px;
+  width: 100px;
+  height: 39px;
+  float: right;
+}
+
+.produse {
+  padding: 9px;
+}
+
+@media (max-width: 768px) {
+  .table,
+  th,
+  td {
+    border: 1px solid;
+  }
+  .table {
+    width: 570px;
+  }
+
+  input {
+    width: 420px;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .table,
+  th,
+  td {
+    border: 1px solid;
+  }
+  .table {
+    width: 370px;
+  }
+
+  input {
+    width: 320px;
+  }
+}

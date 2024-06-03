@@ -21,12 +21,13 @@ function DisplayTemplateGrid (props) {
 
 export default DisplayTemplateGrid;
 
-DisplayTemplateGrid.propTypes = 
-{
-  lista_pizza : {
-  id: PropTypes.string,
-  imageUrl: PropTypes.string,
-  pret: PropTypes.string,
-  title: PropTypes.string
-}
-}
+// DisplayTemplateGrid.propTypes = 
+// {
+//   lista_pizza : {
+//   id: PropTypes.string,
+//   imageUrl: PropTypes.string,
+//   pret: PropTypes.string,
+//   title: PropTypes.string
+// }
+// }
+

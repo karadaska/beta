@@ -164,12 +164,11 @@
 @media (max-width: 768px) {
   .servicii_poza {
     width: 50%;
-    /* background: url(/src/images/banner/banner_mobile.jpg); */
 }
 
   .flex-container .div1_sites_left {
     font-size: 19px!important;
-    /* margin-left: 24px; */
+    margin-left: 60px;
   }
 
   .flex-container .div1_sites_right {
@@ -202,11 +201,26 @@
 }
 
 @media (max-width: 425px) {
-  .title_footer {
-    font-size: 55px;
+  servicii_poza {
+    width: 50%;
+}
+
+  .flex-container .div1_sites_left {
+    font-size: 19px!important;
+    margin-left: 60px;
   }
 
-  .flex-container {
-    height: 276px;
+  .flex-container .div1_sites_right {
+    font-size: 19px!important;
   }
+
+  .title_footer {
+    margin-right: 9px;
+}
+
+
+.vl {
+  display: none;
+}
+
 }
