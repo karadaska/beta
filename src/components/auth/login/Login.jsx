@@ -58,7 +58,7 @@ export function Login() {
       <input type="password" id="password" name="password" placeholder="password"/>
       <button>login</button>
     </form>
-    <p className="message">Nu este inregistrat? <Link to="../register">Inregistreaza-te acum2!</Link></p>
+    <p className="message">Nu este inregistrat? <Link to="../register">Inregistreaza-te acum!</Link></p>
   </div>
 </div>
 
