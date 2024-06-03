@@ -11,6 +11,12 @@
       "password": "$2a$10$qkNwKfqQllH.qeaVuMjQIe3GNq2RNK4Y64/jjbrNJg//Sv2QXc8G2",
       "username": "florin",
       "id": 2
+    },
+    {
+      "email": "fofo.munteanu@gmail.com",
+      "password": "$2a$10$vmzO0LOIlNU8EeRAevt7puBQNyEO6/FYsb.UmC3oOxWUz/QiAdAou",
+      "username": "florin",
+      "id": 3
     }
   ],
   "meniu": [
