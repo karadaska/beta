@@ -47,16 +47,16 @@ export function Login() {
       <DisplayNavBar />
       <div className="login-page">
   <div className="form">
-    <form className="register-form" onSubmit={login}>
+    {/* <form className="register-form" onSubmit={login}>
       <input type="text" placeholder="name"/>
       <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
       <button>create</button>
       <p className="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form className="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
+    </form> */}
+
+    <form className="login-form" onSubmit={login}>
+      <input type="email" id="email" name="email" placeholder="adresa de email"/>
+      <input type="password" id="password" name="password" placeholder="password"/>
       <button>login</button>
       <p className="message">Nu este inregistrat? Inregistreaza-te acum!</p>
     </form>
