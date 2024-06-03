@@ -81,11 +81,20 @@
 }
 
 @media (max-width: 425px) { 
+    .servicii_text {
+        width: 100%;
+        background-color: transparent;
+    }
+    .servicii_poza {
+        display: none;
+    }
+
     .paragraf_title {
         font-size: 14px;
+        margin-top: 63px;
     }
     .title_servicii {
-        margin-top: 25px;
+        margin-top: 45px;
         font-size: 20px;
     }
     

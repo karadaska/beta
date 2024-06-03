@@ -1,4 +1,7 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
+import DisplayNavContact from "../nav-contact/nav_contact";
+import DisplayNavBar from "../header/header";
+
 
 export default function createPizza() {
   const navidate = useNavigate();
@@ -28,6 +31,8 @@ export default function createPizza() {
 
   return (
     <>
+     <DisplayNavContact />
+      <DisplayNavBar />
     <Link to="/">Inapoi</Link>
     <form onSubmit={SavePizza}>
       <fieldset>
