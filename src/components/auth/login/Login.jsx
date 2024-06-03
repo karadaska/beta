@@ -1,17 +1,12 @@
-import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../App";
+import DisplayNavContact from "../../nav-contact/nav_contact";
+import DisplayNavBar from "../../header/header";
 
-import './Login.css';
-
-export default function Login() {
+export function Login() {
   const navigate = useNavigate();
-  const { setAuth } = useContext(AuthContext);
-  const [error, setError] = useState();
 
-  async function login(event) {
+  function login(event) {
     event.preventDefault();
-    setError(null);
 
     const formElement = event.target;
     const { email, password } = formElement;
@@ -21,46 +16,36 @@ export default function Login() {
       password: password.value,
     };
 
-    const response = await fetch("http://localhost:3000/login", {
+    fetch("http://localhost:3000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(user),
-    });
-    const body = await response.json();
-
-    if (response.status === 400) {
-      setError(body);
-      return;
-    }
-
-    if (response.ok) {
-      localStorage.setItem("accessToken", body.accessToken);
-      setAuth(body.accessToken);
-      navigate("/");
-    }
+    }).then(() => navigate("/login"));
   }
 
   return (
-    <form onSubmit={login}>
-      {error ? <p className='error'>{error}</p> : ""}
-
-      <fieldset>
-        <label htmlFor="email">Email:</label>
-        <div>
-          <input type="email" id="email" name="email" />
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <label htmlFor="password">Password:</label>
-        <div>
-          <input type="password" id="password" name="password" />
-        </div>
-      </fieldset>
-
-      <button>Login</button>
-    </form>
+    <div>
+      <DisplayNavContact />
+      <DisplayNavBar />
+      <div className="formular">
+        <form onSubmit={login}>
+          <fieldset>
+            <label htmlFor="email">Email:</label>
+            <div>
+              <input type="email" id="email" name="email" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <label htmlFor="password">Password:</label>
+            <div>
+              <input type="password" id="password" name="password" />
+            </div>
+          </fieldset>
+          <button>Login</button>
+        </form>
+      </div>
+    </div>
   );
 }

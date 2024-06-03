@@ -6,7 +6,7 @@ import AdaugaPizza from "./components/add-pizza/add";
 import EditPizza from "./components/edit-pizza/edit";
 import EditProdus from "./components/edit-produs/editprodus";
 import { Register } from "./components/auth/register/register";
-// import { Login } from "./components/auth/login/Login";
+import { Login } from "./components/auth/login/login";
 
 /* de aici import pt login*/
 import React, { useState } from "react";
@@ -27,7 +27,7 @@ function App() {
           <Route path="edit-pizza/:id" element={ <EditPizza />}></Route>
           <Route path="edit-produs/:id" element={ <EditProdus />}></Route>
           <Route path="/register" element={ <Register />}></Route>
-          {/* <Route path="/Login" element={ <Login />}></Route> */}
+          <Route path="/login" element={ <Login />}></Route>
         </Routes>
       </BrowserRouter>
       </ProduseContext.Provider>
