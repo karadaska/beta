@@ -1,10 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DisplayNavContact from "../../nav-contact/nav_contact";
 import DisplayNavBar from "../../header/header";
 import { useContext } from "react";
 import { AuthContext } from "../../../App";
 import "./login.css";
-
 export function Login() {
   const navigate = useNavigate();
 
@@ -58,8 +57,8 @@ export function Login() {
       <input type="email" id="email" name="email" placeholder="adresa de email"/>
       <input type="password" id="password" name="password" placeholder="password"/>
       <button>login</button>
-      <p className="message">Nu este inregistrat? Inregistreaza-te acum!</p>
     </form>
+    <p className="message">Nu este inregistrat? <Link to="../register">Inregistreaza-te acum2!</Link></p>
   </div>
 </div>
 
