@@ -5,7 +5,6 @@ import DisplayNavContact from "../nav-contact/nav_contact";
 import DisplayNavBar from "../header/header";
 
 
-
 async function getPizzaById(seteazaPizza, pizza_id) {
   const response = await fetch(`http://localhost:3000/meniu/${pizza_id}`);
   const meniuFromServer = await response.json();
@@ -15,18 +14,6 @@ async function getPizzaById(seteazaPizza, pizza_id) {
 
 export default function PizzaDetails() {
   const mainPage = useNavigate();
-
-
-  function deletePizza(){
-    const deleteConfirm = confirm('Sigur vrei sa stergi produsul?');
-    if(deleteConfirm){
-      fetch(`http://localhost:3000/meniu/${id}`, {method : 'DELETE'}).then(() => mainPage('/'));
-    }
-  }
-
-  function editProdus(){
-    navigate(`/edit-produs/${id}`)
-}
 
   const [pizza, setPizza] = useState({});
   const { id } = useParams();
@@ -45,6 +32,18 @@ export default function PizzaDetails() {
   if (!pizza) {
     return;
   }
+
+  function deletePizza(){
+    const deleteConfirm = confirm('Sigur vrei sa stergi produsul?');
+    if(deleteConfirm){
+      fetch(`http://localhost:3000/meniu/${id}`, {method : 'DELETE'}).then(() => mainPage('/'));
+    }
+  }
+
+  function editProdus(){
+    navigate(`/edit-produs/${id}`)
+}
+
 
   return (
     <div className="div_details">
