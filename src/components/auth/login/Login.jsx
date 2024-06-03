@@ -3,6 +3,7 @@ import DisplayNavContact from "../../nav-contact/nav_contact";
 import DisplayNavBar from "../../header/header";
 import { useContext } from "react";
 import { AuthContext } from "../../../App";
+import "./login.css";
 
 export function Login() {
   const navigate = useNavigate();
@@ -30,7 +31,6 @@ export function Login() {
     const body = await response.json();
 
     if (response.status === 400) {
-      // setError(body);
       return;
     }
 
@@ -41,11 +41,30 @@ export function Login() {
     }
   }
 
-
   return (
     <div>
       <DisplayNavContact />
       <DisplayNavBar />
+      <div className="login-page">
+  <div className="form">
+    <form className="register-form" onSubmit={login}>
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p className="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form className="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p className="message">Nu este inregistrat? Inregistreaza-te acum!</p>
+    </form>
+  </div>
+</div>
+
+
+{/*       
       <div className="formular">
         <form onSubmit={login}>
           <fieldset>
@@ -62,7 +81,7 @@ export function Login() {
           </fieldset>
           <button>Login</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }
