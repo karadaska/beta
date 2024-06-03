@@ -1,20 +1,24 @@
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import DisplayTemplateGrid from "../functii/gridtemplate";
 import "./portofoliu.css";
 import {Link} from 'react-router-dom';
+import { useContext } from "react";
+import { ProduseContext } from "../../App";
 
 async function getMeniu(setMeniu){
   const response = await fetch('http://localhost:3000/meniu');
+
   const meniuFromServer = await response.json();
+  
   if(response.ok){
     setMeniu(meniuFromServer);
   }
 }
 
 function DisplayPortofoliu() {
-  const [lista_pizza, setMeniu] = useState([]);
-
+  // const [lista_pizza, setMeniu] = useState([]);
+  const {lista_pizza, setMeniu} = useContext(ProduseContext)
   useEffect(() => {
     getMeniu(setMeniu)
   }, []);

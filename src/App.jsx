@@ -9,15 +9,16 @@ import { Register } from "./components/auth/register/register";
 // import { Login } from "./components/auth/login/Login";
 
 /* de aici import pt login*/
-// import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
-// export const AuthContext = React.createContext();
+export const ProduseContext = React.createContext();
 
 
 function App() {
-  // const [auth, setAuth] = useState(accessToken);
+  const [lista_pizza, setProduse] = useState([]);
   return (
     <>
+    <ProduseContext.Provider value ={{lista_pizza,setProduse}}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={ <DisplayComponents />}></Route>
@@ -29,6 +30,7 @@ function App() {
           {/* <Route path="/Login" element={ <Login />}></Route> */}
         </Routes>
       </BrowserRouter>
+      </ProduseContext.Provider>
     </>
   );
 }
