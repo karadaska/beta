@@ -45,25 +45,40 @@ export function Login() {
       <DisplayNavContact />
       <DisplayNavBar />
       <div className="login-page">
-  <div className="form">
-    {/* <form className="register-form" onSubmit={login}>
+        <div className="form">
+          {/* <form className="register-form" onSubmit={login}>
       <input type="text" placeholder="name"/>
       <input type="password" placeholder="password"/>
       <button>create</button>
       <p className="message">Already registered? <a href="#">Sign In</a></p>
     </form> */}
+          <form className="login-form" onSubmit={login}>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="adresa de email"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+            />
+            <button>login</button>
+          </form>
+          <p className="message">
+            Nu este inregistrat?{" "}
+            <Link to="../register">Inregistreaza-te acum!</Link>
+          </p>
+        </div>
+      </div>
 
-    <form className="login-form" onSubmit={login}>
-      <input type="email" id="email" name="email" placeholder="adresa de email"/>
-      <input type="password" id="password" name="password" placeholder="password"/>
-      <button>login</button>
-    </form>
-    <p className="message">Nu este inregistrat? <Link to="../register">Inregistreaza-te acum!</Link></p>
-  </div>
-</div>
+    </div>
+  );
+}
 
-
-{/*       
+      {/*       
       <div className="formular">
         <form onSubmit={login}>
           <fieldset>
@@ -81,6 +96,3 @@ export function Login() {
           <button>Login</button>
         </form>
       </div> */}
-    </div>
-  );
-}
