@@ -46,13 +46,7 @@ export function Login() {
       <DisplayNavBar />
       <div className="login-page">
         <div className="form">
-          {/* <form className="register-form" onSubmit={login}>
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <button>create</button>
-      <p className="message">Already registered? <a href="#">Sign In</a></p>
-    </form> */}
-          <form className="login-form" onSubmit={login}>
+           <form className="login-form" onSubmit={login}>
             <input
               type="email"
               id="email"
@@ -73,11 +67,17 @@ export function Login() {
           </p>
         </div>
       </div>
-
     </div>
   );
 }
 
+
+         {/* <form className="register-form" onSubmit={login}>
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <button>create</button>
+      <p className="message">Already registered? <a href="#">Sign In</a></p>
+    </form> */}
       {/*       
       <div className="formular">
         <form onSubmit={login}>

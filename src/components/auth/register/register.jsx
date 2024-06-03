@@ -36,9 +36,44 @@ export function Register() {
     <div>
       <DisplayNavContact />
       <DisplayNavBar />
-      <div className="formular">
-      <form onSubmit={register}>
-        <fieldset>
+      <div className="login-page">
+        <div className="form">
+          <form onSubmit={register}>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Introduc username"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introdu adresa de email"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+            />
+            <input
+              type="password"
+              id="reTypePassword"
+              name="reTypePassword"
+              placeholder="Reintrodu parola"
+            />
+            <button>Inregistreaza</button>
+          </form>
+          <p className="message">Daca ai cont click aici:</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+{
+  /* <fieldset>
           <label htmlFor="username">Username:</label>
           <div>
             <input type="text" id="username" name="username" />
@@ -64,12 +99,10 @@ export function Register() {
           <div>
             <input type="password" id="reTypePassword" name="reTypePassword" />
           </div>
-        </fieldset>
-        <div className="butoane">
+        </fieldset> */
+}
+{
+  /* <div className="butoane">
         <button className="register">Register</button>
-        </div>
-      </form>
-      </div>
-    </div>
-  );
+        </div> */
 }
