@@ -4,12 +4,13 @@ import "../pizza-details/pizzadetails.css";
 import DisplayNavContact from "../nav-contact/nav_contact";
 import DisplayNavBar from "../header/header";
 
-
 async function getPizzaById(seteazaPizza, pizza_id) {
   const response = await fetch(`http://localhost:3000/meniu/${pizza_id}`);
   const meniuFromServer = await response.json();
 
   seteazaPizza(meniuFromServer);
+
+  console.log(meniuFromServer);
 }
 
 export default function PizzaDetails() {
@@ -33,28 +34,29 @@ export default function PizzaDetails() {
     return;
   }
 
-  function deletePizza(){
-    const deleteConfirm = confirm('Sigur vrei sa stergi produsul?');
-    if(deleteConfirm){
-      fetch(`http://localhost:3000/meniu/${id}`, {method : 'DELETE'}).then(() => mainPage('/'));
+  function deleteProdus() {
+    const deleteConfirm = confirm("Sigur vrei sa stergi produsul?");
+    if (deleteConfirm) {
+      fetch(`http://localhost:3000/meniu/${id}`, { method: "DELETE" }).then(
+        () => mainPage("/")
+      );
     }
   }
 
-  function editProdus(){
-    navigate(`/edit-produs/${id}`)
-}
-
+  function editProdus() {
+    navigate(`/edit-produs/${id}`);
+  }
 
   return (
     <div className="div_details">
-       <DisplayNavContact />
-         <DisplayNavBar />
+      <DisplayNavContact />
+      <DisplayNavBar />
       <div>
         <table className="table">
-        <tr>
+          <tr>
             <th className="table_td">Poza:</th>
             <td>
-            <img src={pizza.imageUrl} className='table_img' alt="Mamma mia" />
+              <img src={pizza.imageUrl} className="table_img" alt="Mamma mia" />
             </td>
           </tr>
           <tr>
@@ -71,8 +73,14 @@ export default function PizzaDetails() {
           </tr>
           <tr>
             <th colSpan={2}>
-            <button className="delete" onClick={deletePizza}> Delete</button>
-          <button className="edit" onClick={editProdus}> Edit</button>
+              <button className="delete" onClick={deleteProdus}>
+                {" "}
+                Delete
+              </button>
+              <button className="edit" onClick={editProdus}>
+                {" "}
+                Edit
+              </button>
             </th>
           </tr>
         </table>
@@ -80,7 +88,3 @@ export default function PizzaDetails() {
     </div>
   );
 }
-
- {/* <h3>Titlu: {pizza.title}</h3>
-        <h3>Descriere{pizza.descriere}</h3>
-        <h3>Pret: {pizza.pret}</h3> */}
