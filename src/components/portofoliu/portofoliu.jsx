@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 import { useContext } from "react";
 import { ProduseContext } from "../../App";
 
-async function getMeniu(setMeniu, accessToken){
+async function getMeniu(setMeniu, accessToken, navigate){
   const response = await fetch('http://localhost:3000/meniu', {
     headers: {
       'Authorization' : `Bearer ${accessToken}`
@@ -18,7 +18,12 @@ async function getMeniu(setMeniu, accessToken){
   if(response.ok){
     setMeniu(meniuFromServer);
   }
+
+  if (response.status === 401) {
+    navigate('/login')
+  }
 }
+
 
 function DisplayPortofoliu() {
   const accessToken = localStorage.getItem("accessToken");
