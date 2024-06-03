@@ -3,18 +3,20 @@ import { useEffect, useState } from "react";
 import DisplayTemplateGrid from "../functii/gridtemplate";
 import "./portofoliu.css";
 import {Link} from 'react-router-dom';
-import { useContext } from "react";
-import { ProduseContext } from "../../App";
+// import { useContext } from "react";
+// import { ProduseContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 import { getMeniu } from "../../lib/produse";
-
 
 console.log(getMeniu);
 
 function DisplayPortofoliu() {
   const navigate = useNavigate();
   const accessToken = localStorage.getItem("accessToken");
-  const {lista_pizza, setMeniu} = useContext(ProduseContext)
+  // const {lista_pizza, setMeniu} = useContext(ProduseContext)
+
+  const [lista_pizza, setMeniu] = useState([]);
+
   const [auth, setAuth] = useState(accessToken);
 
   useEffect(() => {
