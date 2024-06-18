@@ -55,7 +55,7 @@ export function Register() {
               type="password"
               id="password"
               name="password"
-              placeholder="password"
+              placeholder="parola"
             />
             <input
               type="password"

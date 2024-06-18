@@ -57,7 +57,7 @@ export function Login() {
               type="password"
               id="password"
               name="password"
-              placeholder="password"
+              placeholder="parola"
             />
             <button>login</button>
           </form>
