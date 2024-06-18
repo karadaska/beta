@@ -57,7 +57,7 @@ export default function PizzaDetails() {
       <div>
         <table className="table">
           <tr>
-            <th className="table_td">Poza:</th>
+            <th className="table_td"></th>
             <td>
               <img src={pizza.imageUrl} className="table_img" alt="Mamma mia" />
             </td>
