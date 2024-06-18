@@ -1,7 +1,6 @@
 import "./header.css";
 import Logo from '../../images/logo/logo_popas.jpg';
 import Register from '../../images/Navbar/register.png';
-import Login from '../../images/Navbar/login.png';
 import { Link } from "react-router-dom";
 
 function DisplayNavBar() {
@@ -34,6 +33,11 @@ function DisplayNavBar() {
             <li className="list-item">
               <Link to="/login">
             Login
+            </Link>
+            </li>
+            <li className="list-item">
+              <Link to="../user/user.jsx">
+            Utilizator
             </Link>
             </li>
           </ul>

@@ -6,6 +6,7 @@ import DisplayServicii from "../servicii/servicii";
 import DisplayPortofoliu from "../portofoliu/portofoliu";
 import DisplayFooter from "../footer/footer";
 import DisplayCopyright from "../copyright/copyright";
+import DisplayUser from "../user/user"
 
 export default function DisplayComponents(){
     return (
@@ -17,6 +18,7 @@ export default function DisplayComponents(){
         <DisplayPortofoliu /> 
         <DisplayFooter />
         <DisplayCopyright /> 
+        <DisplayUser /> 
         </>
     );
 }
