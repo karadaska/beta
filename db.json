@@ -24,17 +24,11 @@
       "url": "",
       "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/9506fac5-af0b-4924-91e1-2fabe63be10e.jpg"
     },
-    {
-      "id": "714bf231-74c2-4c37-866d-0413fa756a0c",
-      "title": "Primavera",
-      "descriere": "blat pizza, mix branzeturi mammamia(mozzarella, cascaval), piept pui, sos de rosii dulce, branza brie, branza cu mucegai, ciuperci - 800g / 1200g Alergeni: gluten, lactoza, mustar",
-      "pret": "44.00",
-      "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/4f30f4e1-50e5-4578-827b-e1b467da664a.jpg"
-    },
+   
     {
       "id": "81694259-bb26-409d-ad48-70a0329f97fa",
       "title": "Italian Queen",
-      "descriere": "blat pizza, mix branzeturi mammamia(mozzarella, cascaval), sos de rosii dulce, sunca de porc, salam vara, ardei gras, ciuperci - 700g / 1050g Alergeni: gluten, lactoza, soia, telina",
+      "descriere": "blat pizza, mix branzeturi mammamia(mozzarella, cascaval), mix branzeturi mammamia(mozzarella, cascaval),sos de rosii dulce, sunca de porc, salam vara, ardei gras, ciuperci - 700g / 1050g Alergeni: gluten, lactoza, soia, telina",
       "pret": "50.00",
       "url": "",
       "imageUrl": "https://cdn.restajet.com/files/company/2931/menu/images/951cff75-033f-4702-825a-9d200556e7eb.jpg"

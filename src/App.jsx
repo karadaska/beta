@@ -6,7 +6,7 @@ import AdaugaPizza from "./components/add-pizza/add";
 import EditProdus from "./components/edit-produs/editprodus";
 import React, { useState } from "react";
 import { Register } from "./components/auth/register/register";
-import { Login } from "./components/auth/login/login";
+import { Login } from "./components/auth/ogin/login";
 
 export const ProduseContext = React.createContext();
 export const AuthContext = React.createContext();
